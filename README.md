@@ -1,8 +1,8 @@
 # My JavaScript Style Guide
 
-   1.Use `const` or `let` , avoid using `var`
+    1. Use `const` or `let` , avoid using `var`
  
-```js
+    ```js
     // bad 
 var a = 1;
 var b = 2;
@@ -10,9 +10,9 @@ var b = 2;
     // good 
 let a = 1;
 const b = 2; 
-``` 
+    ```         
 
-2.Use `===` and `!==` over `==` and `!=`
+    2. Use `===` and `!==` over `==` and `!=`
    
 ```js
     // bad
@@ -24,7 +24,7 @@ const b = 2;
 1 != '1' //false
 ```
 
-3.Use shortcuts for booleans, but explicit comparisons for strings and numbers.
+    3. Use shortcuts for booleans, but explicit comparisons for strings and numbers.
 
 ```js
 // bad
@@ -38,7 +38,7 @@ if (name !== '') {}
 if (collection.length > 0) {}
 ```
 
-4.Ternaries should not be nested and generally be single line expressions.
+    4. Ternaries should not be nested and generally be single line expressions.
 ```js
     // bad
 const foo = maybe1 > maybe2
@@ -50,7 +50,7 @@ const maybeNull = value1 > value2 ? 'baz' : null;
 const foo = maybe1 > maybe2 ? 'bar' : maybeNull;
 ```
 
- 5.Avoid unneeded ternary statements. 
+    5. Avoid unneeded ternary statements. 
 ```js
 // bad
 const foo = a ? a : b;
@@ -63,7 +63,7 @@ const bar = !!c;
 const baz = !c;
 ```
 
-6.Avoid single letter names. 
+    6. Avoid single letter names. 
 Be descriptive with your naming.
 Use camelCase when naming objects, functions, and instances.
 Use PascalCase only when naming constructors or classes.
@@ -80,7 +80,7 @@ function sumEvenNumbers(){};
 class MyClass {};
 ```
 
-7.Terminate your statements with semicolons ;.
+    7. Terminate your statements with semicolons ;.
 
 ```js
     // bad
@@ -90,7 +90,7 @@ const myObj = {}
 const myObj ={};
 ```
 
-8.Additional trailing comma
+    8. Additional trailing comma
 
 ```js
     // bad
@@ -106,7 +106,7 @@ const webHeroes = {
 };
 ```
 
-9.Set off operators with spaces. 
+    9. Set off operators with spaces. 
 
 ```js
 // bad
@@ -116,7 +116,7 @@ const x=y+5;
 const x = y + 5;
 ```
 
-10.Start all comments with a space to make it easier to read.
+    10. Start all comments with a space to make it easier to read.
 ```js
 // bad
 //is current tab
